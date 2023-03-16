@@ -16,21 +16,26 @@ public class Cart {
 
     @Override
     public String toString() {
-        if (items.size() ==0){
+        if (items.size() == 0) {
             return "Empty Cart";
         }
         double total = 0;
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Cart -----------------\n"  );
+        stringBuilder.append("Cart -----------------\n");
 
         for (int i = 0; i < items.size(); i++) {
             stringBuilder.append(items.get(i).toString()).append("\n");
             total += items.get(i).getQuantity() * items.get(i).getProduct().getPrice();
         }
-        stringBuilder.append("----------------------\n"  );
+        stringBuilder.append("----------------------\n");
 
-        stringBuilder.append("Total...\t\t\t" + total );
+        stringBuilder.append("Total...\t\t\t" + total);
 
         return stringBuilder.toString();
+    }
+
+    public double total() {
+        return getItems().stream().map(item -> item.getProduct().getPrice() * item.getQuantity()).reduce(0.0, Double::sum);
+
     }
 }

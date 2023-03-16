@@ -40,14 +40,14 @@ public class PosInMemoryDB implements PosDB {
     }
 
     private PosInMemoryDB() {
-        this.products.add(new Product("PD1", "iPhone 13", 8999, "1.jpg"));
-        this.products.add(new Product("PD2", "MacBook Pro", 29499, "2.jpg"));
-        this.products.add(new Product("PD3", "MacBook Pro", 29499, "3.jpg"));
-        this.products.add(new Product("PD4", "MacBook Pro", 29499, "4.jpg"));
-        this.products.add(new Product("PD5", "MacBook Pro", 29499, "5.jpg"));
-        this.products.add(new Product("PD6", "MacBook Pro", 29499, "6.jpg"));
-        this.products.add(new Product("PD7", "MacBook Pro", 29499, "7.jpg"));
-        this.products.add(new Product("PD8", "MacBook Pro", 29499, "comp.png"));
+        this.products.add(new Product("PD1", "熨斗", 150, "1.jpg"));
+        this.products.add(new Product("PD2", "搅拌机", 780, "2.jpg"));
+        this.products.add(new Product("PD3", "女包", 120000, "3.jpg"));
+        this.products.add(new Product("PD4", "iPhone", 4800, "4.jpg"));
+        this.products.add(new Product("PD5", "双人沙发", 2800, "5.jpg"));
+        this.products.add(new Product("PD6", "单人沙发", 1400, "6.jpg"));
+        this.products.add(new Product("PD7", "手表", 3900, "7.jpg"));
+        this.products.add(new Product("PD8", "iMac", 29499, "comp.png"));
 
     }
 
